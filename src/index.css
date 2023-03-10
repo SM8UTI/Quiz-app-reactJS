@@ -221,6 +221,23 @@ button:hover {
   transition: opacity 0.4s ease-in-out;
 }
 
-.score a:hover{
-    opacity: 70%;
+.score a:hover {
+  opacity: 70%;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  max-width: max-content;
+  background-color: #173f7a;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 2rem;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
+
+.copyright a {
+  text-decoration: none;
 }

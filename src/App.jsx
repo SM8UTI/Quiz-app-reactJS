@@ -40,15 +40,13 @@ const app = () => {
       {quizOver ? (
         <h2 className="score">
           Your Score {score} out of {questionsData.length}
-          <a href="/">
-            Refresh page
-          </a>
+          <a href="/">Refresh page</a>
         </h2>
       ) : (
         <div className={play ? `main-container-dlt` : `main-container`}>
           <div
             className="line"
-            style={{ width: `${(currentIndex + 1) * (questionsData.length)}%` }}
+            style={{ width: `${(currentIndex + 1) * questionsData.length}%` }}
           ></div>
 
           <div className="question">
@@ -76,6 +74,9 @@ const app = () => {
                 <p>{answer}</p>
               </div>
             ))}
+          </div>
+          <div className="copyright">
+            Made by <a href="https://github.com/SM8UTI/">@sm8uti</a>
           </div>
         </div>
       )}
